@@ -1,0 +1,12 @@
+﻿<div class="state-view">
+	<div>
+		<div ng-if="lights.length == 0" class="alert alert-danger">No lights found...</div>
+		<div ng-if="lights.length != 0" class="light-container">
+			<div ng-repeat="(lightId, light) in lights" class="checkbox">
+				<label for="{{light.uniqueid}}"><input id="{{light.uniqueid}}" type="checkbox" name="{{light.uniqueid}}" value="{{light.name}}" ng-model="lightSelectModel[light.uniqueid]">{{light.name}}</label><br>
+			</div>
+		</div>
+		<div ng-if="noSelectedLightsWarning" class="alert alert-danger">No lights selected..</div>
+		<input ng-if="lights.length != 0" type="button" ng-click="ctrl.chooseLights()" class="btn btn-lg btn-default" value="Use these lights"/>
+	</div>
+</div>

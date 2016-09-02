@@ -1,0 +1,9 @@
+﻿<div class="state-view">
+	<img src="img/logo.png" class="logo" />
+	<div>Listening...</div>
+	<div div id="meter">
+		<div id="limit"></div>
+		<div id="currentVolume" style="height:{{volume*100}}%"></div>
+	</div>
+	<input ng-if="playing" type="button" ng-click="ctrl.stop()" class="btn btn-lg btn-default" value="Stop"/>
+</div>

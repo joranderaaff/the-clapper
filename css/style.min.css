@@ -1,0 +1,8 @@
+html,body{margin:0px;padding:0px;background-color:#170f12;}
+.state-view{padding:20px;text-align:center;max-width:400px;margin:0px auto;background-color:#540c18;min-height:100%;-webkit-box-shadow:0px 0px 46px -9px rgba(0,0,0,0.75);-moz-box-shadow:0px 0px 46px -9px rgba(0,0,0,0.75);box-shadow:0px 0px 46px -9px rgba(0,0,0,0.75);}
+.state-view .logo{margin:40px auto;}
+.btn-default{background-color:rgba(255,255,255,0.2);}
+.light-container{text-align:left;}
+#meter{margin:20px auto;position:relative;width:20px;height:200px;border:1px solid white;}
+#limit{border-top:1px solid red;height:50%;width:100%;position:absolute;left:0px;bottom:0px;}
+#currentVolume{width:100%;position:absolute;left:0px;bottom:0px;background-color:#d17b8a;}

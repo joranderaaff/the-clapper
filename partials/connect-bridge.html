@@ -1,0 +1,11 @@
+﻿<div class="state-view">
+	<img src="img/logo.png" class="logo" />
+	<div ng-if="connected" class="alert alert-success">Bridge found!</div>
+	<div ng-if="connecting" class="alert alert-success">Looking for Hue bridge...</div>
+	<div ng-if="pressButton" class="alert alert-warning">
+		<p>Press the button on your Hue bridge within 30 seconds.</p>
+		<p><input type="button" ng-click="ctrl.retryUserCreation()" class="btn btn-lg btn-success" value="Yes, I did!"/></p>
+	</div>
+	<div ng-if="noBridges || noConnection" class="alert alert-danger">No bridge was found. Is there a network connection/WiFi?</div>
+	<input type="button" ng-if="userCreated" ng-click="ctrl.goToLightSelect()" class="btn btn-lg btn-default" value="Select lights" />
+</div>

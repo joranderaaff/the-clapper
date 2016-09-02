@@ -1,0 +1,24 @@
+<html ng-app="weerwolvenApp">
+	<head>
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<title>The Clapper Philips Hue</title>
+		
+		<link rel="stylesheet" href="css/bootstrap.css">
+		
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+		<script src="js/lib/jshue.js"></script>
+		<script src="js/controller/connect-bridge.js"></script>
+		<script src="js/controller/light-selection.js"></script>
+		<script src="js/controller/control-lights.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<header></header>
+		<div ng-view></div>
+	</body>
+</html>
